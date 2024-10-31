@@ -185,8 +185,10 @@ struct ContentView: View {
                         VStack {
                             Image(systemName: "list.bullet")
                                 .resizable()
-                                .frame(width: 16, height: 16)
-
+                                .scaledToFill()
+                                .frame(width: 25, height: 25)
+                                .foregroundStyle(Color(.label))
+                            
                             Text("Kategorien")
                                 .font(.title3)
                                 .foregroundColor(Color(.tertiaryApp))
@@ -218,8 +220,9 @@ struct ContentView: View {
                         VStack {
                             Image(systemName: isDarkMode ? "moon.fill" : "sun.max.fill")
                                 .resizable()
-                                .foregroundColor(isDarkMode ? .white : .yellow)
-                                .frame(width: 16, height: 16)
+                                .scaledToFill()
+                                .foregroundColor(isDarkMode ? .gray : .yellow)
+                                .frame(width: 25, height: 25)
                             
                             Text("Einstellungen")
                                 .font(.title3)
