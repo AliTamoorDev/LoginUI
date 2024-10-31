@@ -451,7 +451,7 @@ struct AddCardView: View {
                 presentationMode.wrappedValue.dismiss()
             } label: {
                 HStack {
-                    Text("Abbrechen")
+                    Text("Speichern")
                         .foregroundStyle(.green)
                 }
             })
