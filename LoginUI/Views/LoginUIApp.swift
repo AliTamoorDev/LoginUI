@@ -11,7 +11,7 @@ import SwiftUI
 struct LoginUIApp: App {
     var body: some Scene {
         WindowGroup {
-            LoginView()
+            EntryView()
         }
     }
 }
